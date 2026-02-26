@@ -17,7 +17,7 @@ A RESTful API built with **Spring Boot** and **MySQL** for managing recipes. Thi
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -41,7 +41,7 @@ src/
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Base URL: `http://localhost:8080`
 
@@ -54,24 +54,24 @@ src/
 
 ---
 
-## 📋 Data Model — `Recipe`
+##  Data Model — `Recipe`
 
 | Field         | Type              | Required | Notes                              |
 |---------------|-------------------|----------|------------------------------------|
 | `id`          | Integer           | Auto     | Auto-incremented primary key       |
-| `title`       | String            | ✅ Yes   |                                    |
-| `cuisine`     | String            | ❌ No    |                                    |
-| `rating`      | Float             | ❌ No    |                                    |
-| `prep_time`   | Integer (minutes) | ✅ Yes   |                                    |
-| `cook_time`   | Integer (minutes) | ✅ Yes   |                                    |
+| `title`       | String            |  Yes     |                                    |
+| `cuisine`     | String            |  No      |                                    |
+| `rating`      | Float             |  No      |                                    |
+| `prep_time`   | Integer (minutes) |  Yes     |                                    |
+| `cook_time`   | Integer (minutes) |  Yes     |                                    |
 | `total_time`  | Integer (minutes) | Auto     | Calculated as `prep_time + cook_time` |
-| `description` | String (TEXT)     | ❌ No    |                                    |
-| `nutrients`   | JSON              | ❌ No    | Stored as a JSON column            |
-| `serves`      | String            | ❌ No    |                                    |
+| `description` | String (TEXT)     |  No      |                                    |
+| `nutrients`   | JSON              |  No      | Stored as a JSON column            |
+| `serves`      | String            |  No      |                                    |
 
 ---
 
-## 📦 Sample Requests
+## Sample Requests
 
 ### POST `/recipes` — Create a Recipe
 
@@ -135,7 +135,7 @@ src/
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 ### Prerequisites
 
@@ -177,7 +177,7 @@ The application starts at **`http://localhost:8080`**.
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 ```sql
 CREATE TABLE IF NOT EXISTS recipes (
@@ -196,7 +196,7 @@ CREATE TABLE IF NOT EXISTS recipes (
 
 ---
 
-## ✅ Validation Rules
+## Validation Rules
 
 The `POST /recipes` endpoint validates the request body and returns a `400 Bad Request` error listing all missing required fields:
 
@@ -207,6 +207,6 @@ The `POST /recipes` endpoint validates the request body and returns a `400 Bad R
 
 ---
 
-## 📜 License
+##  License
 
 This project is for assessment purposes only.
