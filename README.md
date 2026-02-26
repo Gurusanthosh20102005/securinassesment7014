@@ -4,7 +4,7 @@ A RESTful API built with **Spring Boot** and **MySQL** for managing recipes. Thi
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer       | Technology                        |
 |-------------|-----------------------------------|
